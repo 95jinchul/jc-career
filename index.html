@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김진철 | AI Evaluation · Enterprise AI Platform · AX/PI</title>
+  <meta name="description" content="반도체 소재 연구에서 출발해 AI Evaluation, Enterprise AI Platform, AX/PI까지 — 삼성전자 DS 김진철의 커리어 포트폴리오입니다." />
+  <link rel="canonical" href="https://95jinchul.github.io/jc-career/" />
+  <meta name="theme-color" content="#f6f4ef" />
+
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="김진철 | AI Evaluation · Enterprise AI Platform · AX/PI" />
+  <meta property="og:description" content="AI 기술을 실제 업무와 운영체계에 연결합니다. 삼성전자 DS 김진철의 커리어 포트폴리오." />
+  <meta property="og:url" content="https://95jinchul.github.io/jc-career/" />
+  <meta property="og:image" content="https://95jinchul.github.io/jc-career/assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="김진철 | AI Evaluation · Enterprise AI Platform · AX/PI" />
+  <meta name="twitter:description" content="AI 기술을 실제 업무와 운영체계에 연결합니다. 삼성전자 DS 김진철의 커리어 포트폴리오." />
+  <meta name="twitter:image" content="https://95jinchul.github.io/jc-career/assets/og.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" />
+
+  <style>
+    :root{
+      --bg:#f6f4ef;
+      --paper:#fdfcf9;
+      --ink:#15171c;
+      --body:#43474e;
+      --muted:#6e727a;
+      --line:#e2dfd6;
+      --line-strong:#c9c5b9;
+      --navy:#1f2d57;
+      --navy-soft:#e9ecf4;
+      --serif:"Instrument Serif", "Times New Roman", serif;
+      --sans:"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+             "Segoe UI", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      --max:1120px;
+      --ease:cubic-bezier(.22,.61,.21,1);
+    }
+
+    *{box-sizing:border-box; margin:0; padding:0;}
+
+    html{scroll-behavior:smooth;}
+
+    body{
+      font-family:var(--sans);
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.75;
+      letter-spacing:-0.01em;
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+    }
+
+    /* paper grain */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:0;
+      pointer-events:none;
+      opacity:.5;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.028 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    ::selection{background:var(--navy); color:#fff;}
+
+    a{color:inherit; text-decoration:none;}
+    img{max-width:100%; display:block;}
+
+    :focus-visible{outline:2px solid var(--navy); outline-offset:3px; border-radius:2px;}
+
+    .wrap{
+      width:min(100% - 48px, var(--max));
+      margin-inline:auto;
+      position:relative;
+      z-index:1;
+    }
+
+    /* ---------- top bar ---------- */
+    .topbar{
+      position:fixed;
+      top:0; left:0; right:0;
+      z-index:50;
+      background:rgba(246,244,239,.82);
+      backdrop-filter:blur(16px) saturate(1.4);
+      -webkit-backdrop-filter:blur(16px) saturate(1.4);
+      border-bottom:1px solid rgba(21,23,28,.07);
+    }
+
+    .topbar .wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      min-height:60px;
+      gap:16px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:baseline;
+      gap:9px;
+      font-weight:800;
+      letter-spacing:-0.02em;
+      font-size:15px;
+    }
+
+    .brand em{
+      font-family:var(--serif);
+      font-style:italic;
+      font-weight:400;
+      font-size:14px;
+      color:var(--muted);
+      letter-spacing:0;
+    }
+
+    .nav{display:flex; gap:22px;}
+
+    .nav a{
+      font-size:12.5px;
+      font-weight:650;
+      letter-spacing:.05em;
+      color:var(--muted);
+      text-transform:uppercase;
+      position:relative;
+      padding:4px 0;
+      transition:color .2s var(--ease);
+    }
+
+    .nav a::after{
+      content:"";
+      position:absolute;
+      left:0; right:100%;
+      bottom:0;
+      height:1.5px;
+      background:var(--navy);
+      transition:right .28s var(--ease);
+    }
+
+    .nav a:hover{color:var(--ink);}
+    .nav a:hover::after{right:0;}
+
+    #progress{
+      position:absolute;
+      left:0; bottom:-1px;
+      height:2px;
+      width:100%;
+      background:var(--navy);
+      transform:scaleX(0);
+      transform-origin:left;
+    }
+
+    /* ---------- hero ---------- */
+    .hero{
+      padding:168px 0 96px;
+      display:grid;
+      grid-template-columns:minmax(0,1.5fr) minmax(280px,360px);
+      gap:72px;
+      align-items:start;
+    }
+
+    .kicker{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      color:var(--navy);
+      font-size:13px;
+      font-weight:750;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      margin-bottom:30px;
+    }
+
+    .kicker::before{
+      content:"";
+      width:44px;
+      height:2px;
+      background:var(--navy);
+    }
+
+    .hero h1{
+      font-size:clamp(60px, 9.2vw, 116px);
+      line-height:.98;
+      font-weight:800;
+      letter-spacing:-0.055em;
+      margin-bottom:6px;
+    }
+
+    .hero h1 .en{
+      display:block;
+      font-family:var(--serif);
+      font-style:italic;
+      font-weight:400;
+      font-size:clamp(26px, 3.4vw, 42px);
+      letter-spacing:.005em;
+      color:var(--muted);
+      margin-top:14px;
+    }
+
+    .hero-role{
+      margin-top:26px;
+      font-size:clamp(16px, 1.8vw, 19px);
+      font-weight:750;
+      color:var(--navy);
+      letter-spacing:-0.02em;
+    }
+
+    .hero-desc{
+      margin-top:16px;
+      max-width:600px;
+      font-size:clamp(15.5px, 1.7vw, 17.5px);
+      color:var(--body);
+      word-break:keep-all;
+    }
+
+    .hero-desc strong{color:var(--ink); font-weight:750;}
+
+    .hero-contact{
+      margin-top:40px;
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .email-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      min-height:50px;
+      padding:0 24px;
+      background:var(--ink);
+      color:#fff;
+      border-radius:999px;
+      font-size:14.5px;
+      font-weight:700;
+      letter-spacing:0;
+      transition:transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+      box-shadow:0 10px 26px rgba(21,23,28,.16);
+    }
+
+    .email-btn svg{transition:transform .25s var(--ease);}
+
+    .email-btn:hover{
+      background:var(--navy);
+      transform:translateY(-2px);
+      box-shadow:0 16px 34px rgba(31,45,87,.24);
+    }
+
+    .email-btn:hover svg{transform:translateX(3px);}
+
+    .hero-note{
+      font-size:12.5px;
+      color:var(--muted);
+      letter-spacing:.02em;
+    }
+
+    /* hero side */
+    .hero-side{position:relative;}
+
+    .portrait-frame{
+      position:relative;
+      border-radius:20px;
+      overflow:hidden;
+      aspect-ratio:4/4.8;
+      background:#e9e7e1;
+      box-shadow:0 24px 60px rgba(21,23,28,.14);
+      border:1px solid rgba(21,23,28,.08);
+    }
+
+    .portrait-frame img{
+      width:100%;
+      height:112%;
+      object-fit:cover;
+      object-position:center 20%;
+      will-change:transform;
+    }
+
+    .portrait-caption{
+      margin-top:16px;
+      display:flex;
+      justify-content:space-between;
+      align-items:baseline;
+      gap:10px;
+      border-top:1px solid var(--line-strong);
+      padding-top:12px;
+    }
+
+    .portrait-caption b{
+      font-size:13.5px;
+      font-weight:750;
+      letter-spacing:-0.01em;
+    }
+
+    .portrait-caption span{
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:13.5px;
+      color:var(--muted);
+    }
+
+    .side-facts{
+      margin-top:22px;
+      display:grid;
+      gap:0;
+    }
+
+    .fact{
+      display:grid;
+      grid-template-columns:86px 1fr;
+      gap:12px;
+      padding:11px 0;
+      border-bottom:1px solid var(--line);
+      font-size:13.5px;
+    }
+
+    .fact:first-child{border-top:1px solid var(--line);}
+    .fact span{color:var(--muted);}
+    .fact b{font-weight:700; letter-spacing:-0.01em; word-break:keep-all;}
+
+    /* ---------- marquee ---------- */
+    .marquee{
+      border-block:1px solid var(--line-strong);
+      overflow:hidden;
+      padding:17px 0;
+      background:var(--paper);
+      position:relative;
+      z-index:1;
+    }
+
+    .marquee-track{
+      display:flex;
+      gap:0;
+      width:max-content;
+      animation:scroll 34s linear infinite;
+    }
+
+    .marquee:hover .marquee-track{animation-play-state:paused;}
+
+    .marquee-track span{
+      white-space:nowrap;
+      font-size:15px;
+      font-weight:700;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+      color:var(--ink);
+      padding-right:28px;
+    }
+
+    .marquee-track span i{
+      font-family:var(--serif);
+      font-style:italic;
+      font-weight:400;
+      text-transform:none;
+      letter-spacing:.01em;
+      color:var(--navy);
+    }
+
+    .marquee-track span::after{
+      content:"✳";
+      color:var(--navy);
+      font-size:12px;
+      margin-left:28px;
+      vertical-align:2px;
+    }
+
+    @keyframes scroll{
+      to{transform:translateX(-50%);}
+    }
+
+    /* ---------- sections ---------- */
+    section{
+      padding:104px 0;
+      border-top:1px solid var(--line);
+      scroll-margin-top:56px;
+      position:relative;
+    }
+
+    section:first-of-type{border-top:none;}
+
+    .sec-grid{
+      display:grid;
+      grid-template-columns:230px minmax(0,1fr);
+      gap:56px;
+      align-items:start;
+    }
+
+    .sec-head{position:sticky; top:96px;}
+
+    .sec-index{
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:52px;
+      line-height:1;
+      color:var(--line-strong);
+      margin-bottom:10px;
+    }
+
+    .sec-title{
+      font-size:14px;
+      font-weight:800;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color:var(--navy);
+    }
+
+    .sec-sub{
+      margin-top:6px;
+      font-size:12.5px;
+      color:var(--muted);
+      letter-spacing:.02em;
+    }
+
+    .lead{
+      font-size:clamp(22px, 3vw, 30px);
+      line-height:1.5;
+      font-weight:750;
+      letter-spacing:-0.035em;
+      word-break:keep-all;
+      margin-bottom:22px;
+    }
+
+    .lead em{
+      font-style:normal;
+      color:var(--navy);
+    }
+
+    .body-text{
+      color:var(--body);
+      font-size:15.5px;
+      max-width:640px;
+      word-break:keep-all;
+    }
+
+    /* ---------- experience timeline ---------- */
+    .timeline{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:3px;
+      top:8px;
+      bottom:8px;
+      width:1.5px;
+      background:var(--line-strong);
+      transform:scaleY(0);
+      transform-origin:top;
+      transition:transform 1.4s var(--ease);
+    }
+
+    .timeline.drawn::before{transform:scaleY(1);}
+
+    .titem{
+      position:relative;
+      display:grid;
+      grid-template-columns:150px minmax(0,1fr);
+      gap:26px;
+      padding:26px 0 26px 34px;
+    }
+
+    .titem + .titem{border-top:1px dashed var(--line);}
+
+    .titem::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:38px;
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--bg);
+      border:2px solid var(--navy);
+      transition:background .3s var(--ease), transform .3s var(--ease);
+    }
+
+    .titem:hover::before{
+      background:var(--navy);
+      transform:scale(1.25);
+    }
+
+    .tyear{
+      font-family:var(--serif);
+      font-size:19px;
+      font-style:italic;
+      color:var(--navy);
+      padding-top:4px;
+      font-variant-numeric:tabular-nums;
+      white-space:nowrap;
+    }
+
+    .titem h3{
+      font-size:19px;
+      font-weight:750;
+      letter-spacing:-0.025em;
+      line-height:1.45;
+      word-break:keep-all;
+    }
+
+    .tmeta{
+      margin:5px 0 10px;
+      font-size:13px;
+      color:var(--muted);
+      letter-spacing:0;
+      word-break:keep-all;
+    }
+
+    .titem p{
+      font-size:14.5px;
+      color:var(--body);
+      max-width:620px;
+      word-break:keep-all;
+    }
+
+    .badge{
+      display:inline-block;
+      margin-left:8px;
+      padding:3px 10px;
+      border-radius:999px;
+      background:var(--navy-soft);
+      color:var(--navy);
+      font-size:11px;
+      font-weight:750;
+      letter-spacing:.03em;
+      vertical-align:3px;
+      white-space:nowrap;
+    }
+
+    /* ---------- projects ---------- */
+    .projects{display:flex; flex-direction:column; gap:20px;}
+
+    .project{
+      position:relative;
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:32px 34px 30px;
+      transition:transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
+      overflow:hidden;
+    }
+
+    .project::after{
+      content:attr(data-index);
+      position:absolute;
+      right:22px;
+      top:6px;
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:74px;
+      line-height:1;
+      color:var(--bg);
+      -webkit-text-stroke:1px var(--line-strong);
+      pointer-events:none;
+      transition:color .35s var(--ease);
+    }
+
+    .project:hover{
+      transform:translateY(-4px);
+      border-color:var(--line-strong);
+      box-shadow:0 22px 44px rgba(21,23,28,.09);
+    }
+
+    .project:hover::after{color:var(--navy-soft);}
+
+    .project-head{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:10px;
+      padding-right:70px;
+    }
+
+    .project h3{
+      font-size:20px;
+      font-weight:750;
+      letter-spacing:-0.03em;
+      word-break:keep-all;
+    }
+
+    .ptag{
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:15px;
+      color:var(--navy);
+      white-space:nowrap;
+    }
+
+    .project p{
+      font-size:14.5px;
+      color:var(--body);
+      max-width:640px;
+      word-break:keep-all;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:18px;
+    }
+
+    .chip{
+      padding:5px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:var(--bg);
+      color:var(--body);
+      font-size:11.5px;
+      font-weight:650;
+      letter-spacing:.02em;
+      transition:all .22s var(--ease);
+    }
+
+    .project:hover .chip{border-color:var(--line-strong);}
+
+    .chip:hover{
+      background:var(--navy);
+      border-color:var(--navy);
+      color:#fff;
+      transform:translateY(-1px);
+    }
+
+    /* ---------- skills ---------- */
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:0 44px;
+    }
+
+    .skill{
+      padding:22px 0 20px;
+      border-top:1px solid var(--line);
+      transition:padding-left .3s var(--ease);
+      position:relative;
+    }
+
+    .skill::before{
+      content:"";
+      position:absolute;
+      left:0; top:-1px;
+      height:1px;
+      width:0;
+      background:var(--navy);
+      transition:width .4s var(--ease);
+    }
+
+    .skill:hover::before{width:100%;}
+
+    .skill b{
+      display:flex;
+      align-items:baseline;
+      gap:10px;
+      font-size:15.5px;
+      font-weight:750;
+      letter-spacing:-0.02em;
+      margin-bottom:6px;
+    }
+
+    .skill b i{
+      font-family:var(--serif);
+      font-style:italic;
+      font-weight:400;
+      font-size:13px;
+      color:var(--line-strong);
+    }
+
+    .skill span{
+      color:var(--muted);
+      font-size:13.5px;
+      word-break:keep-all;
+    }
+
+    /* ---------- education & focus ---------- */
+    .edu{
+      border:1px solid var(--line);
+      background:var(--paper);
+      border-radius:18px;
+      padding:30px 34px;
+      max-width:680px;
+    }
+
+    .edu h3{
+      font-size:19px;
+      font-weight:750;
+      letter-spacing:-0.025em;
+      word-break:keep-all;
+    }
+
+    .edu .tmeta{margin:6px 0 10px;}
+
+    .edu p{font-size:14.5px; color:var(--body); word-break:keep-all;}
+
+    .focus-card{
+      position:relative;
+      background:var(--navy);
+      color:#fff;
+      border-radius:20px;
+      padding:44px 46px;
+      overflow:hidden;
+      max-width:760px;
+    }
+
+    .focus-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(560px 300px at 88% -10%, rgba(255,255,255,.14), transparent 62%),
+        radial-gradient(400px 260px at -6% 110%, rgba(255,255,255,.07), transparent 60%);
+      pointer-events:none;
+    }
+
+    .focus-card .fk{
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:15px;
+      color:rgba(255,255,255,.62);
+      margin-bottom:14px;
+    }
+
+    .focus-card h3{
+      font-size:clamp(21px, 2.6vw, 27px);
+      font-weight:750;
+      letter-spacing:-0.03em;
+      line-height:1.45;
+      margin-bottom:14px;
+      word-break:keep-all;
+    }
+
+    .focus-card p{
+      font-size:15px;
+      color:rgba(255,255,255,.82);
+      max-width:560px;
+      word-break:keep-all;
+    }
+
+    /* ---------- contact ---------- */
+    .contact{
+      padding:130px 0 120px;
+      text-align:left;
+    }
+
+    .contact .fk{
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:clamp(19px, 2.4vw, 25px);
+      color:var(--muted);
+      margin-bottom:14px;
+    }
+
+    .contact-mail{
+      display:inline-block;
+      font-size:clamp(30px, 5.6vw, 62px);
+      font-weight:800;
+      letter-spacing:-0.05em;
+      line-height:1.15;
+      position:relative;
+      overflow-wrap:anywhere;
+    }
+
+    .contact-mail::after{
+      content:"";
+      position:absolute;
+      left:0; right:100%;
+      bottom:2px;
+      height:3px;
+      background:var(--navy);
+      transition:right .4s var(--ease);
+    }
+
+    .contact-mail:hover{color:var(--navy);}
+    .contact-mail:hover::after{right:0;}
+
+    .contact-sub{
+      margin-top:22px;
+      font-size:14.5px;
+      color:var(--muted);
+      word-break:keep-all;
+    }
+
+    /* ---------- footer ---------- */
+    footer{
+      border-top:1px solid var(--line);
+      padding:34px 0 46px;
+    }
+
+    footer .wrap{
+      display:flex;
+      justify-content:space-between;
+      align-items:baseline;
+      gap:14px;
+      flex-wrap:wrap;
+      font-size:12.5px;
+      color:var(--muted);
+    }
+
+    footer em{
+      font-family:var(--serif);
+      font-style:italic;
+    }
+
+    /* ---------- reveal motion (only when JS is available) ---------- */
+    html.js .reveal{
+      opacity:0;
+      transform:translateY(26px);
+      transition:opacity .8s var(--ease), transform .8s var(--ease);
+      transition-delay:var(--d, 0s);
+    }
+
+    html.js .reveal.in{opacity:1; transform:none;}
+
+    /* hero entrance */
+    @keyframes rise{
+      from{opacity:0; transform:translateY(30px);}
+      to{opacity:1; transform:none;}
+    }
+
+    .hero .kicker,
+    .hero h1,
+    .hero-role,
+    .hero-desc,
+    .hero-contact{
+      animation:rise .9s var(--ease) both;
+    }
+
+    .hero .kicker{animation-delay:.05s;}
+    .hero h1{animation-delay:.14s;}
+    .hero-role{animation-delay:.26s;}
+    .hero-desc{animation-delay:.34s;}
+    .hero-contact{animation-delay:.44s;}
+
+    .hero-side{animation:rise 1s var(--ease) .3s both;}
+
+    /* ---------- responsive ---------- */
+    @media (max-width:900px){
+      .hero{
+        grid-template-columns:1fr;
+        gap:52px;
+        padding:132px 0 72px;
+      }
+
+      .hero-side{
+        max-width:420px;
+      }
+
+      .sec-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+
+      .sec-head{position:static; display:flex; align-items:baseline; gap:14px;}
+      .sec-index{font-size:34px; margin:0;}
+
+      section{padding:72px 0;}
+    }
+
+    @media (max-width:620px){
+      .wrap{width:min(100% - 36px, var(--max));}
+
+      .nav{gap:14px;}
+      .nav a{font-size:11px;}
+      .nav a:nth-child(n+4){display:none;}
+
+      .titem{grid-template-columns:1fr; gap:4px; padding-left:26px;}
+      .tyear{font-size:16px; padding-top:0;}
+
+      .skills{grid-template-columns:1fr; gap:0;}
+
+      .project{padding:26px 22px;}
+      .project-head{flex-direction:column; gap:2px; padding-right:0;}
+      .project::after{font-size:56px;}
+
+      .focus-card{padding:32px 26px;}
+
+      .marquee-track span{font-size:13px;}
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto;}
+      *, *::before, *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+      }
+      html.js .reveal{opacity:1; transform:none;}
+      .timeline::before{transform:scaleY(1);}
+      .marquee-track{animation:none;}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top">김진철 <em>Kim Jinchul</em></a>
+      <nav class="nav" aria-label="주요 섹션">
+        <a href="#profile">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div id="progress" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <div class="wrap">
+      <section class="hero" style="border-top:none; padding-top:168px;">
+        <div>
+          <div class="kicker">AI Evaluation · Enterprise AI Platform · AX/PI</div>
+
+          <h1>
+            김진철
+            <span class="en">Kim Jinchul</span>
+          </h1>
+
+          <p class="hero-role">삼성전자 DS · Enterprise AI Platform / AI Evaluation</p>
+
+          <p class="hero-desc">
+            반도체 소재 연구에서 출발해 데이터 분석, AI 평가를 거쳐 전사 AI 운영 플랫폼 구축까지 —
+            <strong>AI 기술을 실제 업무와 운영체계에 연결하는 일</strong>을 하고 있습니다.
+          </p>
+
+          <div class="hero-contact">
+            <a class="email-btn" href="mailto:kimhc30918@naver.com">
+              kimhc30918@naver.com
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <span class="hero-note">이메일로 편하게 연락 주세요.</span>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="portrait-frame">
+            <picture>
+              <source srcset="assets/profile.webp" type="image/webp" />
+              <img id="portrait" src="assets/profile.jpg" alt="김진철 프로필 사진" width="880" height="1058" fetchpriority="high" />
+            </picture>
+          </div>
+
+          <div class="portrait-caption">
+            <b>김진철</b>
+            <span>AI Platform · Evaluation · AX</span>
+          </div>
+
+          <div class="side-facts">
+            <div class="fact"><span>현재</span><b>삼성전자 DS</b></div>
+            <div class="fact"><span>주요 분야</span><b>AI Evaluation · Platform · AX/PI</b></div>
+            <div class="fact"><span>학력</span><b>POSTECH 신소재공학 석사</b></div>
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AI Evaluation</span>
+        <span><i>Enterprise AI Platform</i></span>
+        <span>AI Governance</span>
+        <span><i>AX / PI</i></span>
+        <span>LLM Benchmark</span>
+        <span><i>Data Analytics</i></span>
+        <span>Semiconductor R&amp;D</span>
+        <span><i>Process Innovation</i></span>
+        <span>AI Evaluation</span>
+        <span><i>Enterprise AI Platform</i></span>
+        <span>AI Governance</span>
+        <span><i>AX / PI</i></span>
+        <span>LLM Benchmark</span>
+        <span><i>Data Analytics</i></span>
+        <span>Semiconductor R&amp;D</span>
+        <span><i>Process Innovation</i></span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <!-- PROFILE -->
+      <section id="profile">
+        <div class="sec-grid">
+          <div class="sec-head reveal">
+            <div class="sec-index">01</div>
+            <div>
+              <h2 class="sec-title">Profile</h2>
+              <div class="sec-sub">Professional Summary</div>
+            </div>
+          </div>
+
+          <div>
+            <p class="lead reveal">
+              반도체 소재 연구부터 <em>AI Evaluation</em>,
+              <em>Enterprise AI Platform</em> 구축까지 경험했습니다.
+            </p>
+            <p class="body-text reveal" style="--d:.1s">
+              신소재공학 기반의 연구 경험을 바탕으로, 삼성전자 DS에서 Python 기반 데이터 분석,
+              AI Benchmark 및 Evaluation 체계 구축, 전사 AI 과제 Lifecycle을 관리하는 플랫폼 개발 업무를
+              수행했습니다. 기술 자체의 평가에 머무르지 않고, 이를 실제 조직의 Process와 운영체계에
+              연결하는 방향으로 경험의 범위를 넓혀가고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="sec-grid">
+          <div class="sec-head reveal">
+            <div class="sec-index">02</div>
+            <div>
+              <h2 class="sec-title">Experience</h2>
+              <div class="sec-sub">Career Timeline</div>
+            </div>
+          </div>
+
+          <div class="timeline" id="timeline">
+            <article class="titem reveal">
+              <div class="tyear">2026.08</div>
+              <div>
+                <h3>전사 Tech Talk 강연 <span class="badge">약 2,000명</span></h3>
+                <div class="tmeta">삼성전자 DS · 「바이브코딩을 통한 사내 1인 개발/운영 플랫폼 구축 노하우」</div>
+                <p>
+                  Enterprise AI Platform 구축 과정에서 축적한 1인 개발·운영 방식과 실무 노하우를 주제로
+                  전사 Tech Talk을 진행했습니다. 빠른 PoC부터 실제 운영까지 이어지는 개발 방식과
+                  플랫폼 구축 경험을 공유했습니다.
+                </p>
+              </div>
+            </article>
+
+            <article class="titem reveal" style="--d:.06s">
+              <div class="tyear">2026 — 현재</div>
+              <div>
+                <h3>AX / Enterprise AI Platform</h3>
+                <div class="tmeta">삼성전자 DS · AI 운영 플랫폼 구축 · AX / PI</div>
+                <p>
+                  전사 AI 과제의 검토, PoC, Pilot, Deploy, 종료까지 이어지는 Lifecycle을 체계적으로
+                  관리하기 위한 Enterprise AI Operations Platform 구축을 주도했습니다.
+                  AI 과제 관리와 운영 프로세스를 시스템으로 표준화하는 업무를 담당하고 있습니다.
+                </p>
+              </div>
+            </article>
+
+            <article class="titem reveal" style="--d:.12s">
+              <div class="tyear">2026.01 — 04</div>
+              <div>
+                <h3>전사 AI 진단 프로젝트</h3>
+                <div class="tmeta">삼성전자 DS · SW 분과 진단</div>
+                <p>
+                  전사 AI 진단 프로젝트에 참여해 SW 분과 진단 업무를 수행했습니다.
+                  주요 AI 활용 현황과 과제를 점검하고, 조직별 적용 수준과 개선 방향을
+                  정리하는 업무를 수행했습니다.
+                </p>
+              </div>
+            </article>
+
+            <article class="titem reveal" style="--d:.18s">
+              <div class="tyear">2025</div>
+              <div>
+                <h3>AI Evaluation</h3>
+                <div class="tmeta">삼성전자 DS · AI Benchmark · Evaluation Framework</div>
+                <p>
+                  사내 AI Benchmark와 Reasoning Evaluation 체계를 구축하고, 다양한 Benchmark를
+                  일관된 방식으로 평가할 수 있는 Evaluation Library를 개발했습니다.
+                  모델 성능을 객관적으로 비교하고, 실제 업무 활용 관점에서 평가할 수 있는
+                  체계를 만드는 데 집중했습니다.
+                </p>
+              </div>
+            </article>
+
+            <article class="titem reveal" style="--d:.24s">
+              <div class="tyear">2024</div>
+              <div>
+                <h3>Digital Transformation</h3>
+                <div class="tmeta">삼성전자 DS · DXE · Data Analytics · Process Diagnosis</div>
+                <p>
+                  Python 기반 데이터 분석을 활용해 조직 및 업무 프로세스를 진단했습니다.
+                  데이터 분석 결과를 기반으로 업무 현황과 개선 포인트를 정리하는 업무를 수행했습니다.
+                </p>
+              </div>
+            </article>
+
+            <article class="titem reveal" style="--d:.3s">
+              <div class="tyear">2021 — 2023</div>
+              <div>
+                <h3>POSTECH · 신소재공학 석사</h3>
+                <div class="tmeta">DFT · HfO₂ · Oxygen Vacancy</div>
+                <p>
+                  Density Functional Theory 기반 계산을 통해 HfO₂ 내 Oxygen Vacancy 메커니즘을
+                  연구했습니다. 반도체 소재의 물리적 현상을 원자 단위에서 해석하고, 계산 결과를
+                  기반으로 가설을 검증하는 연구를 수행했습니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED WORK -->
+      <section id="work">
+        <div class="sec-grid">
+          <div class="sec-head reveal">
+            <div class="sec-index">03</div>
+            <div>
+              <h2 class="sec-title">Selected Work</h2>
+              <div class="sec-sub">Key Projects</div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <article class="project reveal" data-index="1">
+              <div class="project-head">
+                <h3>Enterprise AI Operations Platform</h3>
+                <span class="ptag">2026</span>
+              </div>
+              <p>
+                전사 AI 과제를 하나의 흐름으로 관리할 수 있도록 Lifecycle과 운영 프로세스를 설계하고,
+                이를 실제 플랫폼으로 구현했습니다. AI 과제의 상태와 진행 현황을 일관되게 관리하고,
+                여러 조직이 동일한 기준으로 협업할 수 있는 구조를 만드는 것이 핵심이었습니다.
+              </p>
+              <div class="chips">
+                <span class="chip">Enterprise AI</span>
+                <span class="chip">Platform</span>
+                <span class="chip">Lifecycle Management</span>
+                <span class="chip">Governance</span>
+                <span class="chip">AX / PI</span>
+              </div>
+            </article>
+
+            <article class="project reveal" data-index="2" style="--d:.08s">
+              <div class="project-head">
+                <h3>Enterprise AI Benchmark &amp; Evaluation Framework</h3>
+                <span class="ptag">2025</span>
+              </div>
+              <p>
+                사내 업무 환경에서 AI 모델의 성능을 평가하기 위한 Benchmark와 Evaluation Framework를
+                구축했습니다. 단순 정확도 비교보다 실제 업무 활용 가능성을 판단할 수 있도록
+                평가 체계를 구조화하고, 반복 가능한 Evaluation Pipeline을 개발했습니다.
+              </p>
+              <div class="chips">
+                <span class="chip">LLM Evaluation</span>
+                <span class="chip">Benchmark</span>
+                <span class="chip">Reasoning</span>
+                <span class="chip">Python</span>
+              </div>
+            </article>
+
+            <article class="project reveal" data-index="3" style="--d:.16s">
+              <div class="project-head">
+                <h3>Data-driven DX Diagnosis</h3>
+                <span class="ptag">2024</span>
+              </div>
+              <p>
+                조직과 업무 프로세스의 현황을 정량적으로 분석하기 위해 Python 기반 분석을 수행했습니다.
+                분석 결과를 바탕으로 주요 이슈와 개선 포인트를 도출했습니다.
+              </p>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">Data Analytics</span>
+                <span class="chip">DX</span>
+                <span class="chip">Process</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="sec-grid">
+          <div class="sec-head reveal">
+            <div class="sec-index">04</div>
+            <div>
+              <h2 class="sec-title">Capabilities</h2>
+              <div class="sec-sub">Core Skills</div>
+            </div>
+          </div>
+
+          <div class="skills">
+            <div class="skill reveal">
+              <b>AI Evaluation <i>01</i></b>
+              <span>Benchmark 설계, Reasoning 평가, Evaluation Pipeline, Model Comparison</span>
+            </div>
+
+            <div class="skill reveal" style="--d:.05s">
+              <b>Enterprise AI Platform <i>02</i></b>
+              <span>AI 과제 Lifecycle, Workflow, Dashboard, Platform Architecture, 운영체계 설계</span>
+            </div>
+
+            <div class="skill reveal" style="--d:.1s">
+              <b>AI Governance / AX <i>03</i></b>
+              <span>전사 AI 운영체계, 과제 관리, 프로세스 표준화, AI 활용 확산 및 의사결정 지원</span>
+            </div>
+
+            <div class="skill reveal" style="--d:.15s">
+              <b>Data &amp; Engineering <i>04</i></b>
+              <span>Python, Data Analytics, Backend / API 기반 시스템 구현 경험</span>
+            </div>
+
+            <div class="skill reveal" style="--d:.2s">
+              <b>Semiconductor R&amp;D <i>05</i></b>
+              <span>Materials Science, DFT, HfO₂, Defect Mechanism</span>
+            </div>
+
+            <div class="skill reveal" style="--d:.25s">
+              <b>Process Innovation <i>06</i></b>
+              <span>업무 구조화, 문제 정의, 운영 프로세스 설계, Digital Transformation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education">
+        <div class="sec-grid">
+          <div class="sec-head reveal">
+            <div class="sec-index">05</div>
+            <div>
+              <h2 class="sec-title">Education</h2>
+              <div class="sec-sub">Graduate Education</div>
+            </div>
+          </div>
+
+          <div class="edu reveal">
+            <h3>포항공과대학교(POSTECH) · 신소재공학과 석사</h3>
+            <div class="tmeta">2021 — 2023 · PSEP (POSTECH–Samsung Electronics Semiconductor Scholarship Program)</div>
+            <p>DFT 기반 HfO₂ Oxygen Vacancy 메커니즘 연구</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS -->
+      <section id="focus">
+        <div class="sec-grid">
+          <div class="sec-head reveal">
+            <div class="sec-index">06</div>
+            <div>
+              <h2 class="sec-title">Focus</h2>
+              <div class="sec-sub">Career Interest</div>
+            </div>
+          </div>
+
+          <div class="focus-card reveal">
+            <div class="fk">What's next —</div>
+            <h3>Enterprise AI Platform · AI Governance · AX / PI</h3>
+            <p>
+              앞으로도 AI 기술을 실제 업무 프로세스와 전사 운영체계에 연결하는 역할을 이어가려 합니다.
+              기술이 조직 안에서 실제로 작동하게 만드는 것, 그것이 제가 집중하는 방향입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="reveal">
+          <div class="fk">Let's talk —</div>
+          <a class="contact-mail" href="mailto:kimhc30918@naver.com">kimhc30918@naver.com</a>
+          <p class="contact-sub">협업 제안, 커리어 관련 대화 모두 환영합니다.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <span>김진철 — AI Platform · Evaluation · AX / PI</span>
+        <span><em>Seoul, Korea</em> · © <span id="year"></span></span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // scroll reveal
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+
+    document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+
+    // timeline line draw
+    var tl = document.getElementById("timeline");
+    if (tl) {
+      new IntersectionObserver(function (entries, obs) {
+        if (entries[0].isIntersecting) {
+          tl.classList.add("drawn");
+          obs.disconnect();
+        }
+      }, { threshold: 0.08 }).observe(tl);
+    }
+
+    // scroll progress + portrait parallax
+    var progress = document.getElementById("progress");
+    var portrait = document.getElementById("portrait");
+    var ticking = false;
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        var doc = document.documentElement;
+        var max = doc.scrollHeight - window.innerHeight;
+        progress.style.transform = "scaleX(" + (max > 0 ? window.scrollY / max : 0) + ")";
+
+        if (portrait && !reduced) {
+          var r = portrait.getBoundingClientRect();
+          var mid = r.top + r.height / 2 - window.innerHeight / 2;
+          portrait.style.transform = "translateY(" + Math.max(-26, Math.min(26, -mid * 0.045)) + "px)";
+        }
+        ticking = false;
+      });
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  </script>
+</body>
+</html>
